@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity } from 'react-native';
 import {useState} from 'react';
 
-export default function Person() {
+export default function Person({navegar}) {
 const [pilotagem, setPilotagem] = useState('')
 const [mira, setMira] = useState('')
 const [carisma, setCarisma] = useState('')
@@ -15,6 +14,7 @@ function criar (){
 
     if(p+m+c === 3){
         alert('Criado com Sucesso')
+        navegar('escolha')
     }else{
         alert('Só pode ter 3 pontos.')
     }

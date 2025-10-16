@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {useState} from 'react';
-import Person from './componentes/Person'
+import Person from './components/Person'
+import Escolha from './components/Escolha'
 
 export default function App() {
   
@@ -14,9 +14,9 @@ export default function App() {
   const mostrar = ()=>{
     switch(tela){
       case 'person':
-        return <Person/>
-      case 'escolha1':
-        return 
+        return <Person navegar={navegar}/>
+      case 'escolha':
+        return <Escolha navegar={navegar}/>
       
     }
   }
