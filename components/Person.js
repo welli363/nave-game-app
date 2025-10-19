@@ -22,6 +22,7 @@ function criar (){
 
 
 
+
   return (
     <View style={styles.container}>
         <Text style={{margin:30, fontSize: 30, fontWeight: 'bold'}}>Criação de Piloto</Text>
