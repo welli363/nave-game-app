@@ -1,0 +1,36 @@
+
+###
+
+GET http://localhost:3000/usuarios
+
+###
+
+GET http://localhost:3000/personagem
+
+###
+
+POST http://localhost:3000/personagem
+Content-Type: application/json
+
+{
+    "nome": "mario",
+    "pilotagem": 0,
+    "mira": 2,
+    "carisma": 1
+}
+
+###
+
+PUT http://localhost:3000/personagem/mario
+Content-Type: application/json
+
+{
+    "nome": "Luigi",
+    "pilotagem": 0,
+    "mira": 2,
+    "carisma": 1
+}
+
+### 
+
+DELETE http://localhost:3000/personagem/mario
